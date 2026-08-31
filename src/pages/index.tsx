@@ -1,42 +1,48 @@
 import type {ReactNode} from 'react';
-import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/Foundation/English%202/overview">
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
-
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
+      title="BS Data Science Master Notes"
+      description="Master notes for the IIT Madras BS Data Science and Applications programme."
+    >
+      <header className="hero hero--primary">
+        <div className="container">
+          <Heading as="h1" className="hero__title">
+            BS Data Science Master Notes
+          </Heading>
+          <p className="hero__subtitle">
+            Master notes for the IIT Madras BS Data Science and Applications programme
+          </p>
+        </div>
+      </header>
+
+      <main className="container margin-vert--lg">
+        <h2>Foundation</h2>
+
+        <h3>
+          <Link to="/docs/Foundation/English%202/overview">
+            English 2
+          </Link>
+        </h3>
+        <p>Structured notes for English 2.</p>
+
+        <h3>
+          <Link to="/docs/Foundation/Mathematics%201/overview">
+            Mathematics 1
+          </Link>
+        </h3>
+        <p>Structured notes for Mathematics 1.</p>
+
+        <h3>
+          <Link to="/docs/Foundation/Programming%20in%20Python/overview">
+            Programming in Python
+          </Link>
+        </h3>
+        <p>Structured notes for Programming in Python.</p>
       </main>
     </Layout>
   );

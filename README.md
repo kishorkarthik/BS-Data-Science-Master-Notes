@@ -7,8 +7,9 @@ and Applications.
 
 ### Foundation Level
 
-- Python
+- Mathematics I
 - English II
+- Programming in Python
 
 ## About
 
@@ -21,4 +22,4 @@ find them useful.
 
 ## Contributing
 
-Contributions, corrections, and improvements are welcome.
+Contributions, corrections, and improvements are welcome
