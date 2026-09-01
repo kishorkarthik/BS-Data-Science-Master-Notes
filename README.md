@@ -1,4 +1,4 @@
-# BS Data Science Master Notes
+# IITM BS Data Science Open Notes
 
 Open-source study notes for the IIT Madras BS in Data Science
 and Applications.
@@ -7,18 +7,14 @@ and Applications.
 
 ### Foundation Level
 
-- Mathematics I
 - English II
+- Mathematics I
 - Programming in Python
 
 ## About
 
 This repository contains structured study notes created while
 working through the IIT Madras BS programme.
-
-The notes are primarily maintained as personal study material,
-while being made publicly available for other students who may
-find them useful.
 
 ## Contributing
 
