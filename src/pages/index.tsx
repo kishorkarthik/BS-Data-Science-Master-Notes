@@ -1,48 +1,91 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
+
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
+import styles from './index.module.css';
+
 export default function Home(): ReactNode {
   return (
     <Layout
-      title="BS Data Science Master Notes"
-      description="Master notes for the IIT Madras BS Data Science and Applications programme."
+      title="IITM DS OPEN NOTES"
+      description="Open source study notes for the IIT Madras BS Data Science and Applications programme, structured and maintained as a documentation site."
     >
-      <header className="hero hero--primary">
-        <div className="container">
-          <Heading as="h1" className="hero__title">
-            BS Data Science Master Notes
-          </Heading>
-          <p className="hero__subtitle">
-            Master notes for the IIT Madras BS Data Science and Applications programme
-          </p>
-        </div>
-      </header>
+      <main className={styles.page}>
 
-      <main className="container margin-vert--lg">
-        <h2>Foundation</h2>
+        <section className={styles.hero}>
+          <div className={styles.heroContent}>
 
-        <h3>
-          <Link to="/docs/Foundation/English%202/overview">
-            English 2
-          </Link>
-        </h3>
-        <p>Structured notes for English 2.</p>
+            <Heading as="h1" className={styles.heroTitle}>
+              <span className={styles.heroLabel}>IITM</span>
+              <span>BS DATA SCIENCE AND APPLICATIONS</span>
+              <span>OPEN NOTES</span>
+            </Heading>
 
-        <h3>
-          <Link to="/docs/Foundation/Mathematics%201/overview">
-            Mathematics 1
-          </Link>
-        </h3>
-        <p>Structured notes for Mathematics 1.</p>
+            <p className={styles.heroSubtitle}>
+              Open source study notes for the IIT Madras BS Data Science and
+              Applications programme, structured and maintained as a
+              documentation site.
+            </p>
 
-        <h3>
-          <Link to="/docs/Foundation/Programming%20in%20Python/overview">
-            Programming in Python
-          </Link>
-        </h3>
-        <p>Structured notes for Programming in Python.</p>
+            <div className={styles.heroLinks}>
+              <Link to="/docs/">
+                Getting Started
+              </Link>
+
+              <Link to="/docs/contributing">
+                Contributing
+              </Link>
+            </div>
+
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <Heading as="h2">Foundation</Heading>
+
+          <div className={styles.courseList}>
+
+            <Link
+              className={styles.course}
+              to="/docs/Foundation/English%202/overview"
+            >
+              <div>
+                <h3>English 2</h3>
+                <p>Structured notes for English 2.</p>
+              </div>
+
+              <span className={styles.arrow}>→</span>
+            </Link>
+
+            <Link
+              className={styles.course}
+              to="/docs/Foundation/Mathematics%201/overview"
+            >
+              <div>
+                <h3>Mathematics 1</h3>
+                <p>Structured notes for Mathematics 1.</p>
+              </div>
+
+              <span className={styles.arrow}>→</span>
+            </Link>
+
+            <Link
+              className={styles.course}
+              to="/docs/Foundation/Programming%20in%20Python/overview"
+            >
+              <div>
+                <h3>Programming in Python</h3>
+                <p>Structured notes for Programming in Python.</p>
+              </div>
+
+              <span className={styles.arrow}>→</span>
+            </Link>
+
+          </div>
+        </section>
+
       </main>
     </Layout>
   );

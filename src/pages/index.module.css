@@ -1,23 +1,176 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.page {
+  min-height: calc(100vh - 60px);
+  background: var(--ifm-background-color);
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+
+
+
+.hero {
+  padding: 7rem 0 5rem;
+  background: var(--ifm-background-color);
 }
 
-.buttons {
+.heroContent {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.heroTitle {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+
+  color: var(--ifm-heading-color);
+
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.heroLabel {
+  margin-bottom: 0.5rem;
+
+  font-size: 0.45em;
+  line-height: 1;
+
+  letter-spacing: 0;
+}
+
+.heroSubtitle {
+  max-width: 650px;
+
+  margin: 2rem 0 0;
+
+  color: var(--ifm-font-color-base);
+
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.heroLinks {
+  display: flex;
+  gap: 1.5rem;
+
+  margin-top: 2rem;
+}
+
+.heroLinks a {
+  color: var(--ifm-font-color-base);
+
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.heroLinks a:hover {
+  color: var(--ifm-color-primary);
+}
+
+
+
+.section {
+  max-width: 1100px;
+
+  margin: 0 auto;
+  padding: 2rem 2rem 6rem;
+}
+
+.section h2 {
+  margin-bottom: 2rem;
+
+  color: var(--ifm-heading-color);
+
+  font-size: 1.5rem;
+}
+
+
+
+
+.courseList {
+  display: flex;
+  flex-direction: column;
+
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.course {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+
+  padding: 1.5rem 0;
+
+  color: var(--ifm-font-color-base);
+
+  text-decoration: none;
+
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+
+  transition:
+    padding 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.course:hover {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  color: var(--ifm-font-color-base);
+
+  text-decoration: none;
+
+  background: var(--ifm-background-surface-color);
+}
+
+.course h3 {
+  margin: 0;
+
+  color: var(--ifm-heading-color);
+
+  font-size: 1.25rem;
+}
+
+.course p {
+  margin: 0.4rem 0 0;
+
+  color: var(--ifm-color-emphasis-600);
+
+  font-size: 0.95rem;
+}
+
+.arrow {
+  font-size: 1.5rem;
+
+  transition: transform 0.2s ease;
+}
+
+.course:hover .arrow {
+  transform: translateX(5px);
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 4rem 0 3rem;
+  }
+
+  .heroContent {
+    padding: 0 1.25rem;
+  }
+
+  .heroTitle {
+    font-size: clamp(2.25rem, 10vw, 4rem);
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
 }

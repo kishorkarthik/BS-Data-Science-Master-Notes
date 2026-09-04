@@ -3,9 +3,9 @@ sidebar_position: 1
 slug: /
 ---
 
-# BS Data Science Master Notes
+# IITM DS OPEN NOTES
 
-Master notes for the **IIT Madras BS in Data Science and Applications**.
+Open source study notes for the IIT Madras BS Data Science and Applications programme, structured and maintained as a documentation site.
 
 ## Courses
 
