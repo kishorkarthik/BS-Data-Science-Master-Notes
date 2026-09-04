@@ -5,26 +5,188 @@
  */
 
 /* You can override the default Infima variables here. */
+
+/* =========================================================
+   Light  Theme — Neutral Grayscale
+   ========================================================= */
+
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #070707;
+  --ifm-color-primary-dark: #000000;
+  --ifm-color-primary-darker: #000000;
+  --ifm-color-primary-darkest: #000000;
+  --ifm-color-primary-light: #202121;
+  --ifm-color-primary-lighter: #303131;
+  --ifm-color-primary-lightest: #404141;
+
+  --ifm-background-color: #f7fbff;
+  --ifm-background-surface-color: #ffffff;
+
+  --ifm-font-color-base: #070707;
+  --ifm-heading-color: #070707;
+
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.06);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* =========================================================
+   Dark Theme — Neutral Grayscale
+   ========================================================= */
+
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* Primary — grayscale only */
+  --ifm-color-primary: #d4d4d4;
+  --ifm-color-primary-dark: #bdbdbd;
+  --ifm-color-primary-darker: #adadad;
+  --ifm-color-primary-darkest: #8f8f8f;
+  --ifm-color-primary-light: #dedede;
+  --ifm-color-primary-lighter: #e7e7e7;
+  --ifm-color-primary-lightest: #f0f0f0;
+
+  /* Backgrounds */
+  --ifm-background-color: #171717;
+  --ifm-background-surface-color: #1f1f1f;
+
+  /* Text */
+  --ifm-font-color-base: #d4d4d4;
+  --ifm-heading-color: #f5f5f5;
+
+  /* Borders */
+  --ifm-color-emphasis-200: #2a2a2a;
+  --ifm-color-emphasis-300: #333333;
+
+  /* Code highlighting */
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.06);
+}
+
+
+.hero {
+  background-color: transparent;
+}
+
+
+/* =========================================================
+   Navbar
+   ========================================================= */
+.navbar {
+  background-color: #070707;
+}
+
+.navbar__title,
+.navbar__link {
+  color: #f5f5f5;
+}
+
+.navbar__link:hover {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .navbar {
+  background-color: #0a0a0a;
+  border-bottom: 1px solid #242424;
+}
+
+[data-theme='dark'] .navbar__title,
+[data-theme='dark'] .navbar__link {
+  color: #e5e5e5;
+}
+
+[data-theme='dark'] .navbar__link:hover {
+  color: #ffffff;
+}
+
+
+[data-theme='light'] .navbar__items .toggle_vylO {
+  color: #f5f5f5;
+}
+
+[data-theme='light'] .navbar__items .toggle_vylO:hover {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   Main Content
+   ========================================================= */
+
+[data-theme='dark'] main {
+  background-color: #171717;
+}
+
+
+/* =========================================================
+   Links
+   ========================================================= */
+
+[data-theme='dark'] a {
+  color: #d4d4d4;
+}
+
+[data-theme='dark'] a:hover {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   Footer
+   ========================================================= */
+
+.footer {
+  background-color: #101010;
+}
+
+.footer__title, .footer__link-item {
+  color: #bdbdbd;
+}
+
+.footer__link-item:hover {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   Code Blocks
+   ========================================================= */
+
+[data-theme='dark'] code {
+  background-color: #222222;
+  border-color: #303030;
+}
+
+[data-theme='dark'] pre {
+  background-color: #111111;
+  border: 1px solid #292929;
+}
+
+
+/* =========================================================
+   Sidebar
+   ========================================================= */
+
+[data-theme='dark'] .theme-doc-sidebar-container {
+  border-right: 1px solid #292929;
+}
+
+[data-theme='dark'] .menu__link {
+  color: #a3a3a3;
+}
+
+[data-theme='dark'] .menu__link:hover {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+[data-theme='dark'] .menu__link--active {
+  background-color: #252525;
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   Cards / Surfaces
+   ========================================================= */
+
+[data-theme='dark'] .card {
+  background-color: #1f1f1f;
+  border: 1px solid #2c2c2c;
 }

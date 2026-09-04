@@ -3,18 +3,18 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'BS Data Science Master Notes',
-  tagline: 'Master notes for the IIT Madras BS Data Science programme',
+  title: 'IITM DS OPEN NOTES',
+  tagline: 'Open Source study notes for the IIT Madras BS Data Science and Applications programme, structured and maintained as a documentation site.',
   favicon: 'img/favicon.ico',
 
   future: {
     v4: true,
   },
 
-  url: 'https://bs-data-science-master-notes.vercel.app',
+  url: 'https://iitm-ds-open-notes.vercel.app',
   baseUrl: '/',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
 
   i18n: {
     defaultLocale: 'en',
@@ -44,17 +44,13 @@ const config: Config = {
     },
 
     navbar: {
-      title: 'BS Data Science Master Notes',
-      logo: {
-        alt: 'BS Data Science Master Notes Logo',
-        src: 'img/logo.svg',
-      },
+      title: 'IITM DS OPEN NOTES',
       items: [],
     },
 
     footer: {
       style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} BS Data Science Master Notes.`,
+      copyright: `Copyright © ${new Date().getFullYear()} iitm-ds-open-notes contributors.`,
     },
 
     prism: {
