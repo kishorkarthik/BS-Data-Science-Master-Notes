@@ -42,6 +42,16 @@ const sidebars: SidebarsConfig = {
               id: 'Foundation/Programming in Python/overview',
               label: 'Overview',
             },
+            {
+              type: 'doc',
+              id: 'Foundation/Programming in Python/Appendix 1 - Python Built-in Functions',
+              label: 'Appendix 1',
+            },
+            {
+              type: 'doc',
+              id: 'Foundation/Programming in Python/Appendix 2 - Built-in Type Methods',
+              label: 'Appendix 2',
+            },
           ],
         },
       ],
